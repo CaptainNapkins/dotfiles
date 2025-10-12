@@ -1,0 +1,6 @@
+[submodule "vim-lsp"]
+	path = config/vim/pack/plugged/opt/vim-lsp
+	url = git@github.com:prabirshrestha/vim-lsp.git
+[submodule "gruvbox-vim"]
+	path = config/vim/pack/plugged/opt/gruvbox
+	url = git@github.com:gruvbox-community/gruvbox.git
