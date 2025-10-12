@@ -8,8 +8,9 @@ it'll do just fine.
 I'd like to keep this as dependency free as possible. 
 
 ## Vim Stuff
-- Vim stuff will be in `config/vim` and then running `prep_env.sh` will symlink `~/.vim` to `dotfiles/config/vim` once this repo is cloned to the host. Then, plugins will be downloaded as 
-git submodules and managed natively by the vim package manager. 
+- Vim stuff will be in `config/vim` and then running `prep_env.sh` will symlink `dotfiles/config/vim` to `~/.vim`  once this repo is cloned to the host. Then, plugins will be downloaded as 
+git submodules and managed natively by the vim package manager. You can see this behavior in
+`config/vim/vimrc`.
 
 ## Other Stuff
 TBD
