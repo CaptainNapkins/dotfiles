@@ -1,11 +1,16 @@
 This will be a collection of configuration/dotfiles for the applications I use on the daily.
 
 My initial plan is to clone this and have some kind of script that symlinks everything to the proper place
-on the host. Yeah, thats kind of hacky. Perhaps theres a way I can modify an env variable or something. 
+on the host. Yeah, thats kind of hacky. But so far this isn't that complex and for my use case
+it'll do just fine
 
 I'd like to keep this as dependency free as possible. 
 
 ## Vim Stuff
-- Vim stuff will be in `config/.vim` and then the plan is to symlink `~/.vim` to `~/dotfiles/config/vim`
-once this repo is cloned to the host. Then, plugins will be installed as git submodules and managed by
-vim packages. The only thing I am worried about is the symlink, im not sure how vim will play with that. 
+- Vim stuff will be in `config/vim` and then running `prep_env.sh` will symlink `~/.vim` to `dotfiles/config/vim` once this repo is cloned to the host. Then, plugins will be installed as 
+git submodules and managed by vim packages. 
+
+## Other Stuff
+TBD
+
+Inspired by [Greg Hurnell](https://www.youtube.com/watch?v=X2_R3uxDN6g)

@@ -1,15 +1,20 @@
 if has ("packages")
     packadd! vim-lsp
     packadd! gruvbox
+    packadd! vim-c-cpp-modern
+    packadd! vim-airline
+    packadd! tcomment_vim 
+    packadd! fzf
+    packadd! fzf-vim
 endif
 
 " Enable syntax highlighting
 syntax on
-" set termguicolors
+" This setting is kinda iffy...
+set termguicolors
 " Enable line numbers
 set number
 
-" Allow for later expansion by grouping settings logically
 " General settings section
 set encoding=utf-8
 set fileencoding=utf-8
@@ -25,15 +30,11 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
-set rtp^="/home/captain_napkins/.opam/default/share/ocp-indent/vim"
 
+" Enable dope asthetic 
 colorscheme gruvbox
-" Auto complete stuff
-" inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 
-" LSP stuff, i think...
+" LSP stuff, copied from vim-lsp repo
 if executable('pylsp')
     " pip install python-lsp-server
     au User lsp_setup call lsp#register_server({

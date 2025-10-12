@@ -4,3 +4,18 @@
 [submodule "gruvbox-vim"]
 	path = config/vim/pack/plugged/opt/gruvbox
 	url = git@github.com:gruvbox-community/gruvbox.git
+[submodule "vim-c-cpp-modern"]
+	path = config/vim/pack/plugged/opt/vim-c-cpp-modern
+	url = https://github.com/bfrg/vim-c-cpp-modern.git
+[submodule "vim-airline"]
+	path = config/vim/pack/plugged/opt/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "tcomment-vim"]
+	path = config/vim/pack/plugged/opt/tcomment_vim
+	url = git@github.com:tomtom/tcomment_vim.git
+[submodule "fzf-vim"]
+	path = config/vim/pack/plugged/opt/fzf-vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "fzf"]
+	path = config/vim/pack/plugged/opt/fzf
+	url = git@github.com:junegunn/fzf.git
