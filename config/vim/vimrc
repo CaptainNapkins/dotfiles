@@ -11,7 +11,7 @@ endif
 " Enable syntax highlighting
 syntax on
 " This setting is kinda iffy...
-set termguicolors
+" set termguicolors
 " Enable line numbers
 set number
 
@@ -33,7 +33,7 @@ set incsearch
 
 " Enable dope asthetic 
 colorscheme gruvbox
-
+set background=dark
 " LSP stuff, copied from vim-lsp repo
 if executable('pylsp')
     " pip install python-lsp-server
@@ -47,7 +47,8 @@ endif
 if executable('clangd')
     au User lsp_setup call lsp#register_server({
         \ 'name': 'clangd',
-        \ 'cmd': {server_info->['clangd']},
+        \ 'cmd': {server_info->['clangd', '--query-driver=/usr/bin/g++', 
+        \ '--all-scopes-completion', '--clang-tidy', '--compile-commands-dir=build']},
         \ 'allowlist': ['c', 'cpp'],
         \ })
 endif
